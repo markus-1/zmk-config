@@ -131,8 +131,8 @@
         German {
             display-name = "German";
             bindings = <
-&trans  &trans   &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &umlaut_u  &trans  &trans    &trans
-&trans  &kp SQT  &trans  &eszett  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp SEMI  &trans
+&trans  &trans   &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans    &trans
+&trans  &kp SQT  &trans  &kp DE_CAPITAL_ESZETT  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp SEMI  &trans
 &trans  &trans   &trans  &trans   &trans  &trans                  &trans  &trans  &trans     &trans  &trans    &trans
                          &trans   &trans  &trans                  &trans  &trans  &trans
             >;
