@@ -14,6 +14,15 @@
 };
 
 / {
+    macros {
+        tilde_slash: tilde_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE>;
+            label = "TILDE_SLASH";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -30,7 +39,7 @@
 &none      &kp Q    &kp W  &kp F  &kp P      &kp B  &none  &none  &kp J        &kp L        &kp U      &kp Y    &kp P        &kp BSPC
 &kp ESC    &kp A    &kp R  &kp S  &kp T      &kp G  &none  &none  &kp M        &kp N        &kp E      &kp I    &kp O        &none
 &kp LSHFT  &lt 3 Z  &kp X  &kp C  &kp D      &kp V                &kp K        &kp H        &kp COMMA  &kp DOT  &lt 3 MINUS  &none
-                           &none  &lt 1 TAB  &mo 2                &lt 2 ENTER  &lt 1 SPACE  &none
+                           &mo 4  &lt 1 TAB  &mo 2                &lt 2 ENTER  &lt 1 SPACE  &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -46,10 +55,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB         &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL  &kp RCTRL  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0  &kp BSPC
-&kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &kp RALT   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
-&studio_unlock  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans    &trans    &trans     &trans     &trans  &trans
-                                               &kp LGUI      &trans        &kp SPACE                             &kp LGUI  &trans    &kp SPACE
+&kp TAB         &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &trans  &trans  &kp EQUAL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE     &kp PERCENT   &kp DEL
+&kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &kp LEFT   &kp DOWN           &kp UP            &kp RIGHT     &tilde_slash  &trans
+&studio_unlock  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                  &kp EXCL   &kp PG_DN          &kp PG_UP         &kp QUESTION  &trans        &trans
+                                               &trans        &trans        &trans                          &trans     &trans             &trans
             >;
         };
 
@@ -80,23 +89,13 @@
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        M+A {
+            display-name = "Nav";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_3 {
-            display-name = "EXTRA 3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&kp TAB         &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &trans  &trans  &kp EQUAL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE     &kp PERCENT   &kp DEL
+&kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &kp LEFT   &kp DOWN           &kp UP            &kp RIGHT     &tilde_slash  &trans
+&studio_unlock  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                  &kp EXCL   &kp PG_DN          &kp PG_UP         &kp QUESTION  &trans        &trans
+                                               &trans        &trans        &trans                          &trans     &trans             &trans
             >;
         };
     };
