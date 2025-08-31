@@ -119,7 +119,7 @@
             >;
         };
 
-        M+A {
+        MA {
             display-name = "Nav";
             bindings = <
 &kp TAB         &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &trans  &trans  &kp EQUAL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE     &kp PERCENT   &kp DEL
