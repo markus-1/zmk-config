@@ -26,6 +26,22 @@
     };
 
     behaviors {
+        umlaut_u: umlaut_u {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Umlaut U";
+            #binding-cells = <0>;
+            bindings = <&kp DE_U>, <&kp DE_U_UMLAUT>;
+
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+        eszett: eszett {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Eszett";
+            #binding-cells = <0>;
+            bindings = <&kp DE_S>, <&kp DE_SZ>;
+
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
         hrml: hrml {
             compatible = "zmk,behavior-hold-tap";
             label = "home_row_mod_left";
