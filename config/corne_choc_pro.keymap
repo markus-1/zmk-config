@@ -51,6 +51,15 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 40 41 42>;
         };
+
+        umlaut_u: umlaut_u {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Umlaut U";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
     };
 
     keymap {
@@ -66,10 +75,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&none      &kp Q             &kp W                 &kp F             &kp P               &kp B  &none  &none  &kp J        &kp L                &kp U              &kp Y                  &kp P              &kp BSPC
-&kp ESC    &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrml LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmr RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &none
-&kp LSHFT  &lt 3 Z           &kp X                 &kp C             &kp D               &kp V                &kp K        &kp H                &kp COMMA          &kp DOT                &lt 3 MINUS        &none
-                                                   &mo 4             &lt 1 TAB           &mo 2                &lt 2 ENTER  &lt 1 SPACE          &mo 4
+&kt LS(LA(LC(LEFT_GUI)))  &kp Q             &kp W                 &kp F             &kp P               &kp B  &none  &none  &kp J        &kp L                &kp U              &kp Y                  &kp P              &kp BSPC
+&kp ESC                   &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrml LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmr RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &none
+&kp LSHFT                 &lt 3 Z           &kp X                 &kp C             &kp D               &kp V                &kp K        &kp H                &kp COMMA          &kp DOT                &lt 3 MINUS        &none
+                                                                  &mo 4             &lt 1 TAB           &mo 2                &lt 2 ENTER  &lt 1 SPACE          &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -85,10 +94,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB         &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &trans  &trans  &kp EQUAL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE     &kp PERCENT   &kp DEL
-&kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &kp LEFT   &kp DOWN           &kp UP            &kp RIGHT     &tilde_slash  &trans
-&studio_unlock  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                  &kp EXCL   &kp PG_DN          &kp PG_UP         &kp QUESTION  &trans        &trans
-                                               &trans        &trans        &trans                          &trans     &trans             &trans
+&kp TAB         &kp PLUS      &kp LA(L)        &kp NON_US_HASH  &kp LS(N4)    &kp LA(N7)      &trans  &trans  &kp EQUAL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp EQUAL     &kp PERCENT   &kp DEL
+&kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &kp LEFT   &kp DOWN           &kp UP            &kp RIGHT     &tilde_slash  &trans
+&studio_unlock  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset       &bootloader   &studio_unlock                  &kp EXCL   &kp PG_DN          &kp PG_UP         &kp QUESTION  &trans        &trans
+                                               &trans           &trans        &trans                          &trans     &trans             &trans
             >;
         };
 
