@@ -104,10 +104,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB         &kp PLUS      &kp LA(L)        &kp NON_US_HASH  &kp LS(N4)    &kp LA(N7)      &trans  &trans  &kp EQUAL  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp EQUAL     &kp PERCENT   &kp DEL
-&kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &kp LEFT   &kp DOWN           &kp UP            &kp RIGHT     &tilde_slash  &trans
-&studio_unlock  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset       &bootloader   &studio_unlock                  &kp EXCL   &kp PG_DN          &kp PG_UP         &kp QUESTION  &trans        &trans
-                                               &trans           &trans        &trans                          &trans     &trans             &trans
+&kp TAB         &kp DE_PLUS           &kp LA(L)                  &kp DE_HASH            &kp DE_DOLLAR            &kp DE_PIPE      &trans  &trans  &kp DE_EQUAL &kp DE_DOUBLE_QUOTES &kp DE_SINGLE_QUOTE &kp DE_GRAVE    &kp DE_PERCENT   &kp DEL
+&kp LCTRL       &hrml LEFT_ALT DE_LT  &hrml LEFT_CONTROL DE_LBRC &hrml LEFT_GUI DE_LBKT &hrml LEFT_SHIFT DE_LPAR &kp DE_BACKSLASH &trans  &trans  &kp LEFT     &kp DOWN             &kp UP              &kp RIGHT       &tilde_slash     &trans
+&trans          &kp DE_GT             &kp DE_RBRC                &kp DE_RBKT            &kp DE_RPAR              &kp DE_ASTERISK                  &kp DE_EXCL  &kp PG_DN            &kp PG_UP           &kp DE_QUESTION &kp DE_SLASH     &trans
+                                                                 &trans                 &trans                   &trans                           &trans       &trans               &trans
             >;
         };
 
@@ -132,7 +132,7 @@
             display-name = "German";
             bindings = <
 &trans  &trans   &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans    &trans
-&trans  &kp SQT  &trans  &kp DE_CAPITAL_ESZETT  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp SEMI  &trans
+&trans  &kp DE_A_UMLAUT  &trans  &kp DE_ESZETT  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp DE_O_UMLAUT  &trans
 &trans  &trans   &trans  &trans   &trans  &trans                  &trans  &trans  &trans     &trans  &trans    &trans
                          &trans   &trans  &trans                  &trans  &trans  &trans
             >;
