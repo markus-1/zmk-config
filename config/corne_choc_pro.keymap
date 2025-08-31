@@ -19,7 +19,7 @@
         tilde_slash: tilde_slash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DE_TILDE>;
+            bindings = <&kp LA(N) &kp SLASH>;
             label = "TILDE_SLASH";
         };
     };
