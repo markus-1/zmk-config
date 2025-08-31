@@ -69,7 +69,7 @@
             bindings = <
 &kt LS(LA(LC(LEFT_GUI)))  &kp Q             &kp W                 &kp F             &kp P               &kp B  &none  &none  &kp J        &kp L                &kp U              &kp Y                  &kp P              &kp BSPC
 &kp ESC                   &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrml LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmr RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &none
-&kp LSHFT                 &lt 3 Z           &kp X                 &kp C             &kp D               &kp V                &kp K        &kp H                &kp COMMA          &kp DOT                &lt 3 DE_MINUS     &none
+&kp LSHFT                 &lt 3 Z           &kp X                 &kp C             &kp D               &kp V                &kp K        &kp H                &kp COMMA          &kp DOT                &lt 3 SLASH        &none
                                                                   &mo 4             &lt 1 TAB           &mo 2                &lt 2 ENTER  &lt 1 SPACE          &mo 4
             >;
 
