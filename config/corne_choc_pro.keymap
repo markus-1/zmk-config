@@ -70,7 +70,7 @@
 &kt LS(LA(LC(LEFT_GUI)))  &kp Q             &kp W                 &kp F             &kp P               &kp B  &none  &none  &kp J        &kp L                &kp U              &kp Y                  &kp P              &kp BSPC
 &kp ESC                   &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrml LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmr RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &none
 &kp LSHFT                 &lt 3 Z           &kp X                 &kp C             &kp D               &kp V                &kp K        &kp H                &kp COMMA          &kp DOT                &lt 3 FSLH         &none
-                                                                  &mo 4             &lt 1 TAB           &mo 5                &lt 2 ENTER  &lt 1 SPACE          &mo 4
+                                                                  &mo 4             &lt 1 TAB           &mo 5                &lt 5 ENTER  &lt 1 SPACE          &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -113,7 +113,7 @@
         German {
             display-name = "German";
             bindings = <
-&trans  &kp N1           &kp N2  &kp N3         &kp N4  &kp N5  &trans  &trans  &kp N6  &kp N7  &kp DE_U_UMLAUT  &kp N9  &kp N0           &trans
+&trans  &trans           &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans           &trans
 &trans  &kp DE_A_UMLAUT  &trans  &kp DE_ESZETT  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp DE_O_UMLAUT  &trans
 &trans  &trans           &trans  &trans         &trans  &trans                  &trans  &trans  &trans           &trans  &trans           &trans
                                  &trans         &trans  &trans                  &trans  &trans  &trans
