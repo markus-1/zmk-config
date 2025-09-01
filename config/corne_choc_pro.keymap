@@ -79,16 +79,16 @@
         Nav {
             display-name = "Nav";
 
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |      |
-            //                    | GUI |     | SPC   |        | ENT   |     | ALT |
+            // ---------------------------------------------------------------------
+            // |           | + | @ | # | $ | | | =   | "    | '    | `   | % | DEL |
+            // | CAPS_WORD | < | [ | { | ( | \ | LFT | DWN  |  UP  | RGT |   |     |
+            // |           | > | ] | } | ) | * | !   | PGDN | PGUP | ?   | / |     |
+            // |           |   |   |   |   |   |     | ALT  |      |     |   |     |
 
             bindings = <
 &kp TAB     &kp DE_PLUS           &kp LA(L)                  &kp DE_HASH             &kp DE_DOLLAR             &kp LA(N7)       &trans  &trans  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_GRAVE     &kp DE_PERCENT  &kp DEL
-&caps_word  &hrml LEFT_ALT GRAVE  &hrml LEFT_CONTROL LA(N5)  &hrml LEFT_GUI DE_LBKT  &hrml LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash    &trans
-&trans      &kp TILDE             &kp LA(NUMBER_6)           &kp DE_RBKT             &kp DE_RPAR               &kp DE_ASTERISK                  &kp DE_EXCL   &kp PG_DN             &kp PG_UP            &kp DE_QUESTION  &kp DE_SLASH    &trans
+&caps_word  &hrml LEFT_ALT GRAVE  &hrml LEFT_GUI DE_LBKT &hrml LEFT_CONTROL LA(N5)   &hrml LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash    &trans
+&trans      &kp TILDE             &kp DE_RBKT            &kp LA(NUMBER_6)            &kp DE_RPAR               &kp DE_ASTERISK                  &kp DE_EXCL   &kp PG_DN             &kp PG_UP            &kp DE_QUESTION  &kp DE_SLASH    &trans
                                                              &trans                  &trans                    &trans                           &trans        &trans                &trans
             >;
         };
