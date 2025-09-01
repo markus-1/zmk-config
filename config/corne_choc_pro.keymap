@@ -130,12 +130,13 @@
             >;
         };
 
-        Num_2 {
+        Num2 {
+            display-name = "Num 2";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans     &trans  &trans        &trans        &trans        &trans     &trans  &trans  &trans       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &to 0       &trans
+&trans     &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none      &trans  &trans  &none        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none       &kp C_VOLUME_UP
+&kp LSHFT  &trans  &kp LG(X)     &kp LG(C)     &none         &kp LG(V)                  &kp DE_EXCL  &kp N0        &trans        &trans        &kp C_MUTE  &kp C_VOLUME_DOWN
+                                 &trans        &trans        &trans                     &trans       &trans        &trans
             >;
         };
 
