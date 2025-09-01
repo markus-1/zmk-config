@@ -27,13 +27,12 @@
     };
 
     behaviors {
-        hrml: hrml {
+        hrml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "home_row_mod_left";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -41,13 +40,39 @@
             hold-trigger-on-release;
         };
 
-        hrmr: hrmr {
+        hrmlsh: home_row_mod_left_shift {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <22 23 8 9 10 7 8 9 10 11 12 13 21 22 23 24 25 26 27 34 35 36 37 38 39 43 44 45>;
+            hold-trigger-on-release;
+        };
+
+        hrmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             label = "home_row_mod_right";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 40 41 42>;
+        };
+
+        hrmrsh: home_row_mod_right_shift {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -70,7 +95,7 @@
 
             bindings = <
 &kt LS(LA(LC(LEFT_GUI)))  &kp Q             &kp W                 &kp F             &kp P               &kp B  &none  &none  &kp J        &kp L                &kp U              &kp Y                  &none              &kp BSPC
-&kp ESC                   &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrml LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmr RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &kp DE_CARET
+&kp ESC                   &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrmlsh LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmrsh RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &kp DE_CARET
 &kp LSHFT                 &lt 3 Z           &kp X                 &kp C             &kp D               &kp V                &kp K        &kp H                &kp COMMA          &kp DOT                &lt 3 FSLH         &none
                                                                   &mo 4             &lt 1 TAB           &mo 5                &lt 5 ENTER  &lt 1 SPACE          &mo 4
             >;
@@ -94,7 +119,7 @@
             // DE_BACKSLASH
             bindings = <
 &trans      &kp DE_PLUS          &kp LA(L)              &kp DE_HASH           &kp DE_DOLLAR             &kp LA(N7)       &trans  &trans  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_GRAVE     &kp DE_PERCENT  &kp DEL
-&caps_word  &hrml LEFT_ALT DE_LT &hrml LEFT_ALT DE_LBKT &hrml LEFT_GUI LA(N5) &hrml LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash    &trans
+&caps_word  &hrml LEFT_ALT DE_LT &hrml LEFT_ALT DE_LBKT &hrml LEFT_GUI LA(N5) &hrmlsh LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash    &trans
 &trans      &kp DE_GT            &kp DE_RBKT            &kp LA(NUMBER_6)      &kp DE_RPAR               &kp DE_ASTERISK                  &kp DE_EXCL   &kp PG_DN             &kp PG_UP            &kp DE_QUESTION  &kp DE_SLASH    &trans
                                                         &trans                &trans                    &trans                           &trans        &trans                &trans
             >;
