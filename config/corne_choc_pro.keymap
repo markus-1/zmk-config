@@ -19,8 +19,10 @@
         tilde_slash: tilde_slash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+
             // The following key codes do not work, tested on macros with ansi and iso layout:
             // DE_TILDE
+
             bindings = <&kp LA(N) &kp DE_SLASH>;
             label = "TILDE_SLASH";
         };
@@ -86,6 +88,8 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
+
+            hold-trigger-key-positions = <15 9 26 17>;
         };
     };
 
@@ -102,10 +106,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kt LS(LA(LC(LEFT_GUI)))  &kp Q             &kp W                 &kp F             &kp P               &kp B  &none  &none  &kp J        &kp L                &kp U              &kp Y                  &none              &kp BSPC
+&kt LS(LA(LC(LEFT_GUI)))  &kp Q             &kp W                 &kp F             &kp P                 &kp B  &none  &none  &kp J        &kp L                  &kp U              &kp Y                  &none              &kp BSPC
 &kp ESC                   &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrmlsh LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmrsh RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &kp DE_CARET
-&kp LSHFT                 &lt 3 Z           &kp X                 &kp C             &kp D               &kp V                &kp K        &kp H                &kp COMMA          &kp DOT                &lt 3 FSLH         &none
-                                                                  &mo 4             &lt 1 TAB           &mo 5                &lt 5 ENTER  &lt 1 SPACE          &mo 4
+&kp LSHFT                 &ltger 3 Z        &kp X                 &kp C             &kp D                 &kp V                &kp K        &kp H                  &kp COMMA          &kp DOT                &ltger 3 FSLH      &none
+                                                                  &mo 4             &lt 1 TAB             &mo 5                &lt 5 ENTER  &lt 1 SPACE            &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -119,17 +123,17 @@
             // | CAPS_WORD | < | { | [ | ( | \ | LFT | DWN  |  UP  | RGT |   |     |
             // |           | > | } | ] | ) | * | !   | PGDN | PGUP | ?   | / |     |
             // |           |   |   |   |   |   |     | ALT  |      |     |   |     |
-
             // The following key codes do not work, tested on macros with ansi and iso layout:
             // DE_AT
             // DE_LBRC / DE_RBRC
             // DE_PIPE
             // DE_BACKSLASH
+
             bindings = <
-&trans      &kp DE_PLUS          &kp LA(L)              &kp DE_HASH           &kp DE_DOLLAR             &kp LA(N7)       &trans  &trans  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_GRAVE     &kp DE_PERCENT  &kp DEL
-&caps_word  &hrml LEFT_ALT DE_LT &hrml LEFT_ALT DE_LBKT &hrml LEFT_GUI LA(N5) &hrmlsh LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash    &trans
-&trans      &kp DE_GT            &kp DE_RBKT            &kp LA(NUMBER_6)      &kp DE_RPAR               &kp DE_ASTERISK                  &kp DE_EXCL   &kp PG_DN             &kp PG_UP            &kp DE_QUESTION  &kp DE_SLASH    &trans
-                                                        &trans                &trans                    &trans                           &trans        &trans                &trans
+&trans      &kp DE_PLUS           &kp LA(L)               &kp DE_HASH            &kp DE_DOLLAR               &kp LA(N7)       &trans  &trans  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_GRAVE     &kp DE_PERCENT  &kp DEL
+&caps_word  &hrml LEFT_ALT DE_LT  &hrml LEFT_ALT DE_LBKT  &hrml LEFT_GUI LA(N5)  &hrmlsh LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash    &trans
+&trans      &kp DE_GT             &kp DE_RBKT             &kp LA(NUMBER_6)       &kp DE_RPAR                 &kp DE_ASTERISK                  &kp DE_EXCL   &kp PG_DN             &kp PG_UP            &kp DE_QUESTION  &kp DE_SLASH    &trans
+                                                          &trans                 &trans                      &trans                           &trans        &trans                &trans
             >;
         };
 
