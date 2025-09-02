@@ -84,11 +84,13 @@
 
         ltger: layer_tap_german {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
-
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
             hold-trigger-key-positions = <15 9 26 17>;
         };
     };
