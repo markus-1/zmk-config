@@ -101,7 +101,7 @@
 
         Escape {
             bindings = <&kp ESC>;
-            key-positions = <3 4>;
+            key-positions = <31 32>;
         };
     };
 
@@ -130,11 +130,13 @@
         Symbols {
             display-name = "Symbols";
 
-            // ---------------------------------------------------------------------
-            // |           | + | @ | # | $ | | | =   | "    | '    | `   | % | DEL |
-            // | CAPS_WORD | < | { | [ | ( | \ | LFT | DWN  |  UP  | RGT |   |     |
-            // |           | > | } | ] | ) | * | !   | PGDN | PGUP | ?   | / |     |
-            // |           |   |   |   |   |   |     | ALT  |      |     |   |     |
+            // ----------------------------------------------------------------------
+            // |           | % | @ | # | $ | | | =   | "    | '    | `   | +  | DEL |
+            // | CAPS_WORD | < | { | [ | ( | \ | LFT | DWN  |  UP  | RGT | ~/ |     |
+            // |           | > | } | ] | ) | * | !   | PGDN | PGUP | ?   | /  |     |
+            // |           |   |   |   |   |   |     | ALT  |      |     |    |     |
+            //
+            // + on the right in order to support CMD + (increase size)
             // The following key codes do not work, tested on macros with ansi and iso layout:
             // DE_AT
             // DE_LBRC / DE_RBRC
@@ -142,7 +144,7 @@
             // DE_BACKSLASH
 
             bindings = <
-&trans      &kp DE_PLUS           &kp LA(L)               &kp DE_HASH            &kp DE_DOLLAR               &kp LA(N7)       &trans  &trans  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_GRAVE     &kp DE_PERCENT  &kp DEL
+&trans      &kp DE_PERCENT           &kp LA(L)               &kp DE_HASH            &kp DE_DOLLAR               &kp LA(N7)       &trans  &trans  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_GRAVE     &kp DE_PLUS  &kp DEL
 &caps_word  &hrml LEFT_ALT DE_LT  &hrml LEFT_ALT DE_LBKT  &hrml LEFT_GUI LA(N5)  &hrmlsh LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash    &trans
 &trans      &kp DE_GT             &kp DE_RBKT             &kp LA(NUMBER_6)       &kp DE_RPAR                 &kp DE_ASTERISK                  &kp DE_EXCL   &kp PG_DN             &kp PG_UP            &kp DE_QUESTION  &kp DE_SLASH    &trans
                                                           &trans                 &trans                      &trans                           &trans        &trans                &trans
@@ -188,8 +190,13 @@
 
         Num2 {
             display-name = "Num 2";
+            // -----------------------------------------------------------------------------------------
+            // |      |     |     |     |     |     | LCTRL | RCTRL |     |  4  |  5  |  6  |  +  |  BSPC |
+            // |      |     |  7  |  8  |  9  |     | LCTRL | RCTRL |     |  1  |  2  |  3  |     |       |
+            // |      |     |     |     |     |     | LCTRL | RCTRL |     |  0  | (,) | (.) | (-) |       |
+            //                    |     |     |     |               |     |     |     |
             bindings = <
-&trans     &trans        &trans          &trans             &trans               &trans     &trans  &trans  &trans       &kp NUMBER_4                &kp N5              &kp NUMBER_6            &to 0          &trans
+&trans     &trans        &trans          &trans             &trans               &trans     &trans  &trans  &trans       &kp NUMBER_4                &kp N5              &kp NUMBER_6            &kp DE_PLUS          &trans
 &trans     &kp LEFT_ALT  &hrml LCTRL N7  &hrml LEFT_GUI N8  &hrml LEFT_SHIFT N9  &none      &trans  &trans  &none        &hrmr RIGHT_SHIFT NUMBER_1  &hrmr RIGHT_GUI N2  &hrmr RIGHT_CONTROL N3  &kp RIGHT_ALT  &kp C_VOLUME_UP
 &kp LSHFT  &trans        &kp LG(X)       &kp LG(C)          &none                &kp LG(V)                  &kp DE_EXCL  &kp N0                      &trans              &trans                  &kp C_MUTE     &kp C_VOLUME_DOWN
                                          &trans             &trans               &trans                     &trans       &trans                      &trans
