@@ -179,12 +179,12 @@
         };
 
         MA {
-            display-name = "MA";
+            display-name = "M+A";
             bindings = <
-&kp TAB  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &trans  &trans  &rgb_ug RGB_TOG  &trans  &trans  &trans  &kp C_MUTE       &trans
-&trans   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &rgb_ug RGB_BRI  &trans  &trans  &trans  &kp C_VOLUME_UP  &trans
-&trans   &bt BT_CLR    &trans        &sys_reset    &bootloader   &studio_unlock                  &rgb_ug RGB_BRD  &trans  &trans  &trans  &kp C_VOL_DN     &trans
-                                     &trans        &trans        &trans                          &trans           &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &rgb_ug RGB_TOG  &trans  &trans  &trans  &kp C_MUTE       &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &rgb_ug RGB_BRI  &trans  &trans  &trans  &kp C_VOLUME_UP  &trans
+&trans  &bt BT_CLR    &trans        &sys_reset    &bootloader   &studio_unlock                  &rgb_ug RGB_BRD  &trans  &trans  &trans  &kp C_VOL_DN     &trans
+                                    &trans        &trans        &trans                          &trans           &trans  &trans
             >;
         };
 
