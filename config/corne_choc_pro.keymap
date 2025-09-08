@@ -130,10 +130,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&sk LS(LA(LC(LEFT_GUI)))  &kp Q             &kp W                 &kp F             &kp P                 &kp B  &none  &none  &kp J        &kp L                  &kp U              &kp Y                  &none              &kp BSPC
+&sk LS(LA(LC(LEFT_GUI)))  &lt 4 Q           &kp W                 &kp F             &kp P                 &kp B  &none  &none  &kp J        &kp L                  &kp U              &kp Y                  &mo 6              &kp BSPC
 &kp ESC                   &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrmlsh LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmrsh RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &caret_space
 &kp LSHFT                 &ltger 3 Z        &kp X                 &kp C             &kp D                 &kp V                &kp K        &kp H                  &kp COMMA          &kp DOT                &ltger 3 FSLH      &none
-                                                                  &mo 4             &lt 1 TAB             &mo 5                &lt 5 ENTER  &lt 1 SPACE            &mo 4
+                                                                  &none             &lt 1 TAB             &mo 5                &lt 5 ENTER  &lt 1 SPACE            &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -219,10 +219,10 @@
 
         Function {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &trans                   &trans  &trans  &trans
             >;
         };
     };
