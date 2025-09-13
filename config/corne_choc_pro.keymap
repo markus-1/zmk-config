@@ -219,9 +219,9 @@
 
         Ansi {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &kp SEMICOLON  &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans         &kp BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &kp COMMA  &kp DOT  &kp MINUS      &kp SLASH
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
