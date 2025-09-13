@@ -115,6 +115,16 @@
             bindings = <&kp ESC>;
             key-positions = <3 4>;
         };
+
+        Function {
+            bindings = <&to 4>;
+            key-positions = <1 2>;
+        };
+
+        Ansi {
+            bindings = <&to 6>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
