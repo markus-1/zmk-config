@@ -113,7 +113,7 @@
 
         Escape {
             bindings = <&kp ESC>;
-            key-positions = <31 32>;
+            key-positions = <3 4>;
         };
     };
 
