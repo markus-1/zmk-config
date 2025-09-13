@@ -117,12 +117,12 @@
         };
 
         Function {
-            bindings = <&to 4>;
+            bindings = <&tog 4>;
             key-positions = <1 2>;
         };
 
         Ansi {
-            bindings = <&to 6>;
+            bindings = <&tog 6>;
             key-positions = <11 12>;
         };
     };
@@ -142,7 +142,7 @@
             bindings = <
 &sk LS(LA(LC(LEFT_GUI)))  &lt 4 Q           &kp W                 &kp F             &kp P                 &kp B  &none  &none  &kp J        &kp L                  &kp U              &kp Y                  &mo 6              &kp BSPC
 &kp ESC                   &hrml LEFT_ALT A  &hrml LEFT_CONTROL R  &hrml LEFT_GUI S  &hrmlsh LEFT_SHIFT T  &kp G  &none  &none  &kp M        &hrmrsh RIGHT_SHIFT N  &hrmr RIGHT_GUI E  &hrmr RIGHT_CONTROL I  &hrmr RIGHT_ALT O  &caret_space
-&kp LSHFT                 &ltger 3 Z        &kp X                 &kp C             &kp D                 &kp V                &kp K        &kp H                  &kp COMMA          &kp DOT                &ltger 3 FSLH      &none
+&kp LSHFT                 &ltger 3 Z        &kp X                 &kp C             &kp D                 &kp V                &kp K        &kp H                  &kp COMMA          &kp DOT                &ltger 3 FSLH      &to 0
                                                                   &none             &lt 1 TAB             &mo 5                &lt 5 ENTER  &lt 1 SPACE            &none
             >;
 
