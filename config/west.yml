@@ -5,10 +5,15 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     # keys_de.h from joelspadin/zmk-locales directly included, see README.md
+    - name: infely
+      url-base: https://github.com/infely
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: nice-view-battery
+      remote: infely
+      revision: main
   self:
     path: config
