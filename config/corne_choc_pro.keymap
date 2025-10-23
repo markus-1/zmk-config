@@ -190,10 +190,10 @@
             //                    |     |     |     |               |     |     |     |
 
             bindings = <
-&kp C_MUTE         &trans        &trans          &trans             &trans               &trans     &trans  &trans  &trans       &kp NUMBER_4                &kp N5              &kp NUMBER_6            &kp DE_PLUS    &trans
-&kp C_VOLUME_UP    &kp LEFT_ALT  &hrml LCTRL N7  &hrml LEFT_GUI N8  &hrml LEFT_SHIFT N9  &none      &trans  &trans  &none        &hrmr RIGHT_SHIFT NUMBER_1  &hrmr RIGHT_GUI N2  &hrmr RIGHT_CONTROL N3  &kp RIGHT_ALT  &trans
-&kp C_VOLUME_DOWN  &trans        &kp LG(X)       &kp LG(C)          &none                &kp LG(V)                  &kp DE_EXCL  &kp N0                      &trans              &trans                  &trans         &trans
-                                                 &trans             &trans               &trans                     &trans       &trans                      &trans
+&trans  &trans        &trans          &trans             &trans               &trans     &trans  &trans  &trans       &kp NUMBER_4                &kp N5              &kp NUMBER_6            &kp DE_PLUS    &kp C_MUTE
+&trans  &kp LEFT_ALT  &hrml LCTRL N7  &hrml LEFT_GUI N8  &hrml LEFT_SHIFT N9  &none      &trans  &trans  &none        &hrmr RIGHT_SHIFT NUMBER_1  &hrmr RIGHT_GUI N2  &hrmr RIGHT_CONTROL N3  &kp RIGHT_ALT  &kp C_VOLUME_UP
+&trans  &trans        &kp LG(X)       &kp LG(C)          &none                &kp LG(V)                  &kp DE_EXCL  &kp N0                      &trans              &trans                  &trans         &kp C_VOLUME_DOWN
+                                      &trans             &trans               &trans                     &trans       &trans                      &trans
             >;
         };
 
@@ -210,10 +210,10 @@
         Function {
             display-name = "Function";
             bindings = <
-&kp C_MUTE         &kp F1   &kp F2   &kp F3  &kp F4       &kp F5          &trans  &trans  &rgb_ug RGB_TOG  &trans  &trans      &trans  &trans      &trans
-&kp C_VOLUME_UP    &kp F6   &kp F7   &kp F8  &kp F9       &kp F10         &trans  &trans  &rgb_ug RGB_BRI  &trans  &bt BT_NXT  &trans  &bt BT_CLR  &trans
-&kp C_VOLUME_DOWN  &kp F11  &kp F12  &trans  &bootloader  &studio_unlock                  &rgb_ug RGB_BRD  &trans  &bt BT_PRV  &trans  &sys_reset  &trans
-                                     &trans  &trans       &trans                          &trans           &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4       &kp F5          &trans  &trans  &rgb_ug RGB_TOG  &trans  &trans      &trans  &trans      &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9       &kp F10         &trans  &trans  &rgb_ug RGB_BRI  &trans  &bt BT_NXT  &trans  &bt BT_CLR  &trans
+&trans  &kp F11  &kp F12  &trans  &bootloader  &studio_unlock                  &rgb_ug RGB_BRD  &trans  &bt BT_PRV  &trans  &sys_reset  &trans
+                          &trans  &trans       &trans                          &trans           &trans  &trans
             >;
         };
 
