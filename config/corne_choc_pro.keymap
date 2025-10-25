@@ -191,8 +191,8 @@
 
             bindings = <
 &kp C_MUTE    &trans        &trans          &trans             &trans               &trans     &trans  &trans  &trans       &kp NUMBER_4                &kp N5              &kp NUMBER_6            &kp DE_PLUS    &kp BACKSPACE
-&kp C_VOL_UP  &kp LEFT_ALT  &hrml LCTRL N7  &hrml LEFT_GUI N8  &hrml LEFT_SHIFT N9  &none      &trans  &trans  &none        &hrmr RIGHT_SHIFT NUMBER_1  &hrmr RIGHT_GUI N2  &hrmr RIGHT_CONTROL N3  &kp RIGHT_ALT  &kp C_VOLUME_UP
-&kp C_VOL_DN  &trans        &kp LG(X)       &kp LG(C)          &none                &kp LG(V)                  &kp DE_EXCL  &kp N0                      &trans              &trans                  &trans         &kp C_VOLUME_DOWN
+&kp C_VOL_UP  &kp LEFT_ALT  &hrml LCTRL N7  &hrml LEFT_GUI N8  &hrml LEFT_SHIFT N9  &none      &trans  &trans  &none        &hrmr RIGHT_SHIFT NUMBER_1  &hrmr RIGHT_GUI N2  &hrmr RIGHT_CONTROL N3  &kp RIGHT_ALT  &trans
+&kp C_VOL_DN  &trans        &kp LG(X)       &kp LG(C)          &none                &kp LG(V)                  &kp DE_EXCL  &kp N0                      &trans              &trans                  &trans         &trans
                                             &trans             &trans               &trans                     &trans       &trans                      &trans
             >;
         };
