@@ -173,10 +173,10 @@
             // DE_BACKSLASH
 
             bindings = <
-&trans      &kp DE_PERCENT        &kp LA(L)                   &kp DE_HASH            &kp DE_DOLLAR               &kp LA(N7)       &trans  &trans  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &grave_space     &kp DE_PLUS   &kp DEL
-&caps_word  &hrml LEFT_ALT DE_LT  &hrml LEFT_CONTROL DE_LBKT  &hrml LEFT_GUI LA(N5)  &hrmlsh LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash  &trans
-&trans      &kp DE_GT             &kp DE_RBKT                 &kp LA(NUMBER_6)       &kp DE_RPAR                 &kp DE_ASTERISK                  &kp DE_EXCL   &kp PG_DN             &kp PG_UP            &kp DE_QUESTION  &kp DE_SLASH  &trans
-                                                              &trans                 &trans                      &trans                           &trans        &trans                &trans
+&caret_space  &kp DE_PERCENT        &kp LA(L)                   &kp DE_HASH            &kp DE_DOLLAR               &kp LA(N7)       &trans  &trans  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &grave_space     &kp DE_PLUS   &kp DEL
+&caps_word    &hrml LEFT_ALT DE_LT  &hrml LEFT_CONTROL DE_LBKT  &hrml LEFT_GUI LA(N5)  &hrmlsh LEFT_SHIFT DE_LPAR  &kp LS(LA(N7))   &trans  &trans  &kp LEFT      &kp DOWN              &kp UP               &kp RIGHT        &tilde_slash  &trans
+&trans        &kp DE_GT             &kp DE_RBKT                 &kp LA(NUMBER_6)       &kp DE_RPAR                 &kp DE_ASTERISK                  &kp DE_EXCL   &kp PG_DN             &kp PG_UP            &kp DE_QUESTION  &kp DE_SLASH  &trans
+                                                                &trans                 &trans                      &trans                           &trans        &trans                &trans
             >;
         };
 
