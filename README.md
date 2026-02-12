@@ -7,3 +7,8 @@ Uses [joelspadin/zmk-locales](https://github.com/joelspadin/zmk-locales), direct
 [Help a fåål · nickcoutsos/keymap-editor](https://github.com/nickcoutsos/keymap-editor/discussions/203)
 
 Based on my [ZSA Voyager layout](https://configure.zsa.io/voyager/layouts/ageno/).
+
+Notes:
+
+- Function layer: Keep right GUI, CTRL and ALT free in order to use them with
+  F-keys (ALT-F4).
